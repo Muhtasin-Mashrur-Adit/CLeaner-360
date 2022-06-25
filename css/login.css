@@ -1,0 +1,7 @@
+.service form{
+    
+    justify-content:center;
+    align-items: center;
+    min-height:400px;
+    box-sizing: border-box;
+}
