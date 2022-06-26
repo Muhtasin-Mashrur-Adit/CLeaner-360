@@ -119,17 +119,79 @@ nav ul li input{
 }
 .third-image{
     height: 450px;
-    width: 45%;
-    float: right;
+    width: 850px;
     margin-top: 100px;
-    margin-right: 8px;
+    margin-right: 90px;
+    margin-left: 40px;
 }
 .third-description{
-    width: 50%;
-    float: left;
+    width: 95%;
+}
+.fourth-image{
+    margin-top: 50px;
+    margin-left: 55px;
+    margin-right: 8px;
+}
+.fifth-image{
+    height: 1000px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 109px;
+    margin-right: 100px;
     overflow: hidden;
 }
+.last-description{
+    margin-left: 100px;
+    margin-top: 550px;
+    float: left;
+}
+.last{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.company{
+    color:#fff;
+    font-size:20px;
+}
+.company a{
+    text-decoration: none;
+    color: orange;
+}
+.contacts{
+    color:#fff;
+    font-size:20px;
+    
+    
+}
+.contacts p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.faq{
+    color:#fff;
+    font-size:20px;
+}
+.faq a{
+    text-decoration: none;
+    color: orange;
+}
+.support{
+    color:#fff;
+    font-size:20px;
+}
+.support a{
+    text-decoration: none;
+    color: orange;
+}
 
-.bottom{
-    height: 500px;
+.end{
+    text-align: center;
+    font-size:15px;
+    color:#fff;
+    letter-spacing: 2px;
+    margin-top: 50px;
 }
