@@ -71,41 +71,40 @@ nav ul li button{
 
 }
 nav ul li input{
-    height:30px;
+    height:25px;
     font-size:15px;
     width:250px;
 }
-.repeating_image{
-    display:flex;
-    justify-content:center;
-    
-}
-.name{
-  color:#fff;
-  font-size: 57px;
-  margin-left:50px;
-  margin-top: 300px;
-  font-weight:bold;
-    
-}
-.login{
+
+
+
+.signup {
     color:#fff;
-    font-size:15px;
+    font-size:20px;
     text-align: center;
     margin-top:100px;
     margin-bottom: 180px;
 }
-.login h2{
+.signup h2{
     font-size: 44px;
     margin-bottom: 100px;
 }
-.login .txt_field{
+.signup .txt_field{
     margin-bottom: 6px;
 }
-.login a{
+.signup a{
     text-decoration: none;
     color: orange;
 }
+
+
+
+
+
+
+
+
+
 
 
 
