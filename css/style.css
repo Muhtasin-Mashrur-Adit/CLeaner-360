@@ -36,6 +36,10 @@ nav{
 span{
     color:#f9004d
 }
+.page-indicator{
+    font-weight: 1000;
+    background-color:burlywood;
+}
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -237,6 +241,14 @@ h5{
     padding-left: 10%;
     padding-right: 10%;
 }
+.company{
+    color:#fff;
+    font-size:20px;
+}
+.company a{
+    text-decoration: none;
+    color: orange;
+}
 .contacts{
     color:#fff;
     font-size:20px;
@@ -247,26 +259,26 @@ h5{
     font-size: 20px;
     letter-spacing: 2px;
 }
-.about-2{
+.faq{
     color:#fff;
     font-size:20px;
-   
-    margin-left: 200px;
 }
-.contacts h3{
-    font-size:50px;
+.faq a{
+    text-decoration: none;
+    color: orange;
 }
-.about-2 h3{
-    font-size:50px;
+.support{
+    color:#fff;
+    font-size:20px;
 }
-.about-2 p{
-    font-size: 20px;
-    letter-spacing: 2px;
+.support a{
+    text-decoration: none;
+    color: orange;
 }
 
 .end{
     text-align: center;
-    font-size:20px;
+    font-size:15px;
     color:#fff;
     letter-spacing: 2px;
     margin-top: 50px;
