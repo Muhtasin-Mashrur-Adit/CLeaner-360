@@ -162,6 +162,59 @@ h5{
     border:2px solid #f9004d;
     cursor: pointer;
 }
+.box2{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:800px;
+}
+.card2{
+    height:400px;
+    width:450px;
+    padding:20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow:hidden;
+    text-align: center;
+}
+.card2 i{
+    font-size:50px;
+    display:block;
+    text-align: center;
+    margin:50px 0px ;
+    color:#f9004d;
+}
+.service2{
+    background: #101010;
+    width:100%;
+    padding: 100px 0px;
+}
+.card2 .button2{
+    background-color:#f9004d;
+    color:white;
+    text-decoration:none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding:9px 22px;
+   
+    border-radius: 30px;
+    transition: .4s;
+    margin-top: 100px;
+
+}
+.card2 .button2:hover{
+    background-color:transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+.pra2 p{
+    color:#fcfc;
+    font-size:20px;
+    line-height:27px;
+    margin-bottom: 25px;
+}
 .partnership p{
     color:#fcfc;
     text-align: center;

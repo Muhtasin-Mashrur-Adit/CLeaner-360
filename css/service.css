@@ -1,0 +1,49 @@
+.service2{
+    background: #101010;
+    width:100%;
+    padding: 100px 0px;
+
+}
+.tittle2 h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin:30px auto;
+    text-align: center;
+}
+.box2{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:800px;
+}
+.card2{
+    height:575px;
+    width:600px;
+    padding:20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow:hidden;
+    text-align: center;
+}
+.card2 i{
+    font-size:50px;
+    display:block;
+    text-align: center;
+    margin:25px 0px ;
+    color:#f9004d;
+}
+
+h5{
+    color:white;
+    font-size:50px;
+    margin-bottom: 15px;
+}
+.pra2 p{
+    color:#fcfc;
+    font-size:20px;
+    line-height:27px;
+    margin-bottom: 25px;
+}
