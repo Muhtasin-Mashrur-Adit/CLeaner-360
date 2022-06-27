@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cleaner-360</title>
@@ -20,15 +21,19 @@
             <nav>
                 <h2 class="logo"><a href="index.html">Cleaner-<span>360</span></a></h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><input type="text" placeholder="Search By Your Area" name="search"></li>
-                    <li> <button type="submit">Submit</button></li>
-    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <div class="search-container">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search by your location...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
                 </ul>
             </nav>
         </div>
+        <hr style="color:white">
 
         <div class="login">
             <div class="tittle">
@@ -44,7 +49,7 @@
                 <input type="submit" value="login">
                 <div class="pass"><a href="forgotpass.html">Forgot Password</a></div>
                 <div class="signup_link">
-                    Not an User?<a href="Signup.html"> SignUp</a>
+                    Not an User?<a href="signup.html"> SignUp</a>
                 </div>
             </form>
         </div>
@@ -52,7 +57,7 @@
 
 
         <hr style="color: white;opacity: 0.9;">
-    <div class="last">
+        <div class="last">
         <div class="company">
             <h3><strong>Company</strong></h3>
             <a href="#"><p>Terms and Conditions</p></a>
@@ -73,10 +78,10 @@
             <h3><strong>Support</strong></h3>
             <a href="#">Need help ?</a>
         </div>   
-    </div>
-    <div class="copyright">
+        </div>
+        <div class="copyright">
         <p class="end"><i class="fa-solid fa-copyright"></i> 2022 By Cleaner<span>-360</span></p>
-    </div>
+        </div>
     
     </body>
 </html>

@@ -82,38 +82,62 @@ nav ul li:hover::after{
     cursor: pointer;
 }
 
+.tittle h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin:30px auto;
+    text-align: center;
+}
+.service{
+    background: #101010;
+    width:100%;
+    padding: 100px 0px;
 
-.repeating_image{
+}
+
+.card {
+    height:400px;
+    width:335px;
+    padding:20px 35px;
+    background: rgb(37, 34, 34);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow:hidden;
+    text-align: center;
+}
+.card p{
+    color:#fcfc;
+    font-size:20px;
+    line-height:27px;
+    margin-bottom: 25px;
+}
+.box{
     display:flex;
     justify-content:center;
-    
+    align-items: center;
+    min-height:400px;
 }
-.name{
-  color:#fff;
-  font-size: 57px;
-  margin-left:50px;
-  margin-top: 300px;
-  font-weight:bold;
-    
+
+.card .button{
+    background-color:#f9004d;
+    color:white;
+    text-decoration:none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding:9px 22px;
+   
+    border-radius: 30px;
+    transition: .4s;
+
 }
-.login{
-    color:#fff;
-    font-size:15px;
-    text-align: center;
-    margin-top:100px;
-    margin-bottom: 180px;
+.card .button:hover{
+    background-color:transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
 }
-.login h2{
-    font-size: 44px;
-    margin-bottom: 100px;
-}
-.login .txt_field{
-    margin-bottom: 6px;
-}
-.login a{
-    text-decoration: none;
-    color: orange;
-}
+
 
 
 

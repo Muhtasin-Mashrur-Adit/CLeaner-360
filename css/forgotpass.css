@@ -42,10 +42,6 @@ nav ul li{
     padding:8px 12px;
     position:relative;
 }
-.page-indicator{
-    font-weight: 1000;
-    background-color:burlywood;
-}
 nav ul li a{
     color:#fff;
     text-decoration: none;
@@ -64,19 +60,27 @@ nav ul li::after{
 nav ul li:hover::after{
    width:100% ;
 }
-nav ul li button{
-    font-size:20px;
-    color:#fff;
-    background-color:#f9004d;
 
+
+.search-container{
+    float: right;
+    margin-left: 30px;
 }
-nav ul li input{
-    height:25px;
-    font-size:15px;
-    width:250px;
+.search-container input[type=text]{
+    font-size: 17px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-top: 3.9px;
 }
-
-
+.search-container button{
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: red;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
 
 
 
