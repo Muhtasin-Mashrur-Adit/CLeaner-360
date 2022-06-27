@@ -37,8 +37,8 @@ span{
     color:#f9004d
 }
 .page-indicator{
-    font-weight: 1000;
-    background-color:burlywood;
+    font-weight: 1000px;
+    background-color:#f9004d;
 }
 nav ul li{
     list-style: none;
@@ -75,12 +75,13 @@ nav ul li:hover::after{
     padding-right: 40px;
     padding-bottom: 5px;
     padding-top: 3.9px;
+    
 }
 .search-container button{
     float: right;
     padding: 6px 10px;
     margin-right: 16px;
-    background: red;
+    background: #f9004d;
     font-size: 17px;
     border: none;
     cursor: pointer;

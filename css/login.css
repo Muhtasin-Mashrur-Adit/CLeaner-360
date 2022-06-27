@@ -52,7 +52,7 @@ nav ul li::after{
     content: '';
     width:0%;
     height: 2px;
-    background: #f44336;
+    background: #f9004d;
     display:block;
     margin:auto;
     transition:0.5s;
@@ -76,7 +76,7 @@ nav ul li:hover::after{
     float: right;
     padding: 6px 10px;
     margin-right: 16px;
-    background: red;
+    background:#f9004d;
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -96,23 +96,100 @@ nav ul li:hover::after{
   font-weight:bold;
     
 }
+
+.card .txt_field{
+    margin-bottom: 10px;
+    
+}
+.txt_field input[type=text]{
+    height: 40px;
+    width: 250px;
+    color:white;
+    background: black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.txt_field input[type=password]{
+        height: 40px;
+        width: 250px;
+        color:white;
+        background: black;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+
+.txt_field a{
+    background-color:#f9004d;
+    color:white;
+    text-decoration:none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding:9px 22px;
+    margin-bottom: 20px;
+   
+    border-radius: 30px;
+    transition: .4s;
+    height: 40px;
+    width: 250px;
+    color:white;
+    background: black;
+    
+    margin-top: 30px;
+
+}
+.txt_field a:hover{
+    background-color:transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+
+
 .login{
-    color:#fff;
-    font-size:15px;
+    background: #101010;
+    width:100%;
+   
+
+}
+.tittle h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin:30px auto;
     text-align: center;
-    margin-top:100px;
-    margin-bottom: 180px;
 }
-.login h2{
-    font-size: 44px;
-    margin-bottom: 100px;
+.box{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:400px;
 }
-.login .txt_field{
-    margin-bottom: 6px;
+.card{
+    height:400px;
+    width:335px;
+    padding:20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow:hidden;
+    text-align: center;
 }
-.login a{
+.pass a{
     text-decoration: none;
-    color: orange;
+    font-size: 16px;
+    color:#f9004d;
+    margin-bottom: 20px;
+}
+.signup_link a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#f9004d;
+}
+.signup_link{
+    text-decoration: none;
+    font-size: 16px;
+    color:#fff; 
 }
 
 

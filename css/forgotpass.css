@@ -52,7 +52,7 @@ nav ul li::after{
     content: '';
     width:0%;
     height: 2px;
-    background: #f44336;
+    background:#f9004d;
     display:block;
     margin:auto;
     transition:0.5s;
@@ -76,7 +76,7 @@ nav ul li:hover::after{
     float: right;
     padding: 6px 10px;
     margin-right: 16px;
-    background: red;
+    background:#f9004d;
     font-size: 17px;
     border: none;
     cursor: pointer;
