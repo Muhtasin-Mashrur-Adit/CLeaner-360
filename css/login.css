@@ -71,17 +71,17 @@ nav ul li:hover::after{
     padding-right: 40px;
     padding-bottom: 5px;
     padding-top: 3.9px;
+    
 }
 .search-container button{
     float: right;
     padding: 6px 10px;
     margin-right: 16px;
-    background:#f9004d;
+    background: #f9004d;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
-
 
 .repeating_image{
     display:flex;
@@ -190,6 +190,38 @@ nav ul li:hover::after{
     text-decoration: none;
     font-size: 16px;
     color:#fff; 
+    
+}
+.txt_field3 input[type=email]{
+    height: 40px;
+    width: 350px;
+    color:white;
+    background: black;
+    border-radius: 10px;
+   
+    margin-bottom: 20px;
+}
+.button input[type=submit]{
+    background-color:#f9004d;
+    color:white;
+    text-decoration:none;
+    border:2px solid transparent;
+    font-weight: bold;
+   
+    margin-bottom: 20px;
+   
+    border-radius: 30px;
+    transition: .4s;
+    height: 50px;
+    width: 120px;
+    color:white;
+    background: #f9004d;
+    
+    
+}
+.login2{
+    background-color:rgb(14, 13, 13);
+    font-size: 15px;
 }
 
 

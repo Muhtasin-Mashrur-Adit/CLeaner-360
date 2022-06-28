@@ -71,6 +71,7 @@ nav ul li:hover::after{
     padding-right: 40px;
     padding-bottom: 5px;
     padding-top: 3.9px;
+    
 }
 .search-container button{
     float: right;
@@ -81,7 +82,6 @@ nav ul li:hover::after{
     border: none;
     cursor: pointer;
 }
-
 
 
 

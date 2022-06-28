@@ -71,12 +71,13 @@ nav ul li:hover::after{
     padding-right: 40px;
     padding-bottom: 5px;
     padding-top: 3.9px;
+    
 }
 .search-container button{
     float: right;
     padding: 6px 10px;
     margin-right: 16px;
-    background: red;
+    background: #f9004d;
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -112,6 +113,10 @@ nav ul li:hover::after{
     font-size:20px;
     line-height:27px;
     margin-bottom: 25px;
+}
+.card h5{
+    font-size: 35px;
+    color:#fff;
 }
 .box{
     display:flex;
