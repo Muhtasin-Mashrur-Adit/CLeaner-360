@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/2nd.jpg" class="rounded d-block w-100" alt="...">
+                <img  src="img/2nd.jpg" class="rounded d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>we provide 100% waste management</h2>
                     <p>Our main Target is to make our environment free from plastics.</p>
