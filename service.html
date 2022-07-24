@@ -1,137 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cleaner-360</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Garbageman</title>
 </head>
+
 <body>
-    <body>
-        <div class="'hero">
-            <nav>
-                <h2 class="logo"><a href="index.html">Cleaner-<span>360</span></a></h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li style="background-color:#f9004d;border-radius:10px;"><a href="service.html">Service</a></li>
-                    <div class="search-container">
-                        <form action="#">
-                            <input type="text" name="search" placeholder="Search by your location">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Garbageman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service.html">Service</a>
+              </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
         </div>
-        <hr style="color: #f9004d;opacity: 0.9;">
-    <div class="service2">
-        <div class="tittle2">
-            <h2> Enjoy All Services</h2>
+    </nav>
+
+ 
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Login to Garbageman</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="box2">
-            <div class="card2">
-                <i class="fa-solid fa-recycle"></i>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="InputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword1">Password</label>
+                  <input type="password" class="form-control" id="InputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="Check1">
+                  <label class="form-check-label" for="Check1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button><br><br>
+                <button type="submit" class="btn btn-primary">Forgot password</button><br><br>
                 
-                <h5>Recycle</h5>
-                <div class="pra2">
-                    <p> Recycling is the process of converting waste materials into new materials and objects.
-                         The recovery of energy from waste materials is often included in this concept.
-                          The recyclability of a material depends on its ability to reacquire the properties it had in its original state.
-                           It is an alternative to "conventional" waste disposal that can save material and help lower greenhouse gas emissions.
-                            It can also prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials, 
-                            reducing energy use, air pollution (from incineration) and water pollution (from landfilling).
-                    </p>
-                    
-                    
-                </div>
-            </div>
-            
-
-            <div class="card2">
-                <i class="fa-solid fa-arrows-spin"></i>
-                <h5>Reuse</h5>
-                <div class="pra2">
-                    <p>Reuse is the action or practice of using an item, whether for its original purpose (conventional reuse)
-                         or to fulfill a different function (creative reuse or repurposing). It should be distinguished from recycling,
-                          which is the breaking down of used items to make raw materials for the manufacture of new products.
-                           Reuse  by taking, but not reprocessing, previously used items 
-                            helps save time, money, energy and resources. In broader economic terms,
-                            it can make quality products available to people and organizations with limited means,
-                            while generating jobs and business activity that contribute to the economy.
-                    </p>
-                    
-                    
-                </div>
-            </div>
+              </form>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
     </div>
-    <div class="service2"></div>
-        <div class="box2">
-            <div class="card2">
-                <i class="fa-solid fa-lightbulb-on"></i>
-                <h5>Rethink</h5>
-                <div class="pra2">
-                    <p> Rethinking, reconsidering, or reconsideration, is the process of reviewing a decision or conclusion that has previously been made to determine whether the initial decision should be changed. Rethinking can occur immediately after a decision has been reached, or at any time thereafter. Informally, reconsidering a decision shortly after making it and before taking any action towards
-                        implementing it may be referred to as thinking twice or thinking again (most often phrased in the imperative, think twice or think again).
-                    </p>
-                    
-                    
-                </div>
-            </div>
-            
-
-            <div class="card2">
-                <i class="fa-solid fa-house-day"></i>
-                <h5>Reform</h5>
-                <div class="pra2">
-                    <p>Reform means the improvement or amendment of what is wrong, corrupt, unsatisfactory, etc. The use of the word in this way emerges in the late 18th century and is believed to originate from which identified “Parliamentary Reform” as its primary aim. Reform is generally regarded as antithetical to revolution. Developing countries may carry out a wide range of reforms to improve their living standards, often with support from international financial institutions and
-                        aid agencies. This can include reforms to macroeconomic policy, the civil service,
-                        and public financial management.
-                    </p>      
-                    
-                    
-                </div>
-            </div>
+  </div>
+ 
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Get an Garbageman Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    
+        <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
+                
+              </div>
+              <div class="form-group">
+                <label for="name">Mobile number</label>
+                <input type="number" class="form-control" id="mobile number" aria-describedby="mobile number">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" aria-describedby="address">
+                
+              </div>
+                <div class="form-group">
+                  <label for="InputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword1">Password</label>
+                  <input type="password" class="form-control" id="InputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="cInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="cInputPassword1">
+                </div>
+                 
+                <button type="submit" class="btn btn-primary">Creat Account</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- footer part-->
-    <hr style="color: #f9004d;opacity: 0.9;">
-        <div class="last">
-        <div class="company">
-            <h3><strong>Company</strong></h3>
-            <a href="#"><p>Terms and Conditions</p></a>
-            <a href="#">Certificates</a>
-        </div>
-        <div class="contacts">
-            <h3><strong>Contacts</strong></h3>
-            <p>Address: Plot # 15,Block A, Bashundhara R/A, Dhaka 1229 <br>
-               Phone: 01823714404 <br>
-               Email: Gabageman44@gmail.com</p>
-        </div>
-        <div class="faq">
-            <h3><strong>FAQ's</strong></h3>
-            <a href="#">Ask a question</a><br>
-            <a href="#">Previously asked questions</a>
-        </div>
-        <div class="support">
-            <h3><strong>Support</strong></h3>
-            <a href="#">Need help ?</a>
-        </div>   
-        </div>
-        <div class="copyright">
-        <p class="end"><i class="fa-solid fa-copyright"></i> 2022 By Cleaner<span>-360</span></p>
-        </div>
+
+  
+
+ 
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2022-2023 Garbageman, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

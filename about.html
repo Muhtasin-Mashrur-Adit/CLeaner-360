@@ -1,95 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cleaner-360</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Garbageman</title>
 </head>
+
 <body>
-    <body>
-        <div class="'hero">
-            <nav>
-                <h2 class="logo"><a href="index.html">Cleaner-<span>360</span></a></h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li style="background-color: #f9004d;border-radius:10px;"><a href="about.html">About</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <div class="search-container">
-                        <form action="#">
-                            <input type="text" name="search" placeholder="Search by your location">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Garbageman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service.html">Service</a>
+              </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <a class="btn btn-danger" href="/login.html">Login</a>
+              <a class="btn btn-danger" href="/signup.html">signup</a>
+            </div>
         </div>
-        <hr style="color: #f9004d;opacity: 0.9;">
-    <div class="description-about-us">
-        <h1>About Us</h1>
-        <div class="first-description">
-            <h4> <br><br><br>   To accommodate the quantity of garbage generated each day, by 2050, we will need the same amount of landfill area as 95 regular-sized football fields.
-                This assumption is based on the daily reports of how trash management is being handled. If this continues, air,
-                soil, and water pollution in nature will dramatically grow. Not only will this negatively impact our everyday lives, but it will also provide a serious
-                challenge for our future generations to bear these obligations.</h4>
+    </nav>
+
+ 
+  
+ 
+  <div class="container my-4">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+            <h2 class="featurette-heading" style="color:#f9004d"> Our main Target is to make our environment free from dust and manage the Garbage in good way.</h2>
+            <p class="lead" style="color:white"> To accommodate the quantity of garbage generated each day, by 2050, we will need the same amount of landfill area as 95 regular-sized football fields.
+              This assumption is based on the daily reports of how trash management is being handled. If this continues, air,
+              soil, and water pollution in nature will dramatically grow. Not only will this negatively impact our everyday lives, but it will also provide a serious
+              challenge for our future generations to bear these obligations.</p>
         </div>
-        <img class="first-image" src="img/about_image_1.jpg" alt="">
-        <img class="second-image" src="img/about_image_2.jpg" alt="">
-        <div class="second-description">
-            <h4> <br><br><br> However,  we should alter it and we can. We now have a big obligation to protect our environment by taking all the required precautions.
-               We must accept responsibility for addressing the environmental contamination that is escalating daily, both directly and indirectly. Owners toss away their rubbish,
-               from homes to eateries. We can only appropriately handle the garbage if they do it in the proper location and distribute it to the proper recipients. They will
-               simply need to sign up for our service, keep organic and inorganic garbage apart, and deliver it when our servicemen knock on their doors. Instead of harming
-               and contaminating the environment, this garbage will be transported to a location where it will be appropriately handled and additionally, the owners will 
-               receive hefty compensation for the trash they carelessly discard. </h4>
-        </div><br><br>
-        <div class="third-description">
-            <h4><br><br><br><br><br><br>  Both organic and inorganic waste will be cleverly converted into fertilizer that can be 
-                used in agriculture. In addition to being able to be utilized in gardens, homes, and nurseries, recycled and reused items can also be resold on the market.
-                The entire system may initially have just a very minor effect from this process. Although this is a very minor step, we think it is the correct move in the
-                right direction for progress. </h4>
+        <div class="col-md-5">
+            <img class="img-fluid rounded" src="img/about_image_1.jpg" alt="">
+             
         </div>
-        <img class="third-image" src="img/about_image_3.jpg" alt="">
-        <h4><br><br><br><br> You have done Your work. Let us handle it from there. And thanks a lot for giving us the chance to take care of the environment.</h4>
-        <img class="fourth-image" src="img/about_image_4.jpg" alt="">
-        <div class="last-description"><h2>The cycle of making fertilizer is so fun ! </h2></div>  
-        <img class="fifth-image" src="img/about_image_5.jpg" alt="">
-    </div><br><br>
-    <hr style="color: #f9004d;opacity: 0.9;">
-    <div class="last">
-        <div class="company">
-            <h3><strong>Company</strong></h3>
-            <a href="#"><p>Terms and Conditions</p></a>
-            <a href="#">Certificates</a>
-        </div>
-        <div class="contacts">
-            <h3><strong>Contacts</strong></h3>
-            <p>Address: Plot # 15,Block A, Bashundhara R/A, Dhaka 1229 <br>
-               Phone: 01823714404 <br>
-               Email: Gabageman44@gmail.com</p>
-        </div>
-        <div class="faq">
-            <h3><strong>FAQ's</strong></h3>
-            <a href="#">Ask a question</a><br>
-            <a href="#">Previously asked questions</a>
-        </div>
-        <div class="support">
-            <h3><strong>Support</strong></h3>
-            <a href="#">Need help ?</a>
-        </div>   
     </div>
-    <div class="copyright">
-        <p class="end"><i class="fa-solid fa-copyright"></i> 2022 By Cleaner<span>-360</span></p>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading" style="color:#f9004d">Recycle is best process to make environment free from more and more plastic </h2>
+            <p class="lead" style="color:white">However,  we should alter it and we can. We now have a big obligation to protect our environment by taking all the required precautions.
+              We must accept responsibility for addressing the environmental contamination that is escalating daily, both directly and indirectly. Owners toss away their rubbish,
+              from homes to eateries. We can only appropriately handle the garbage if they do it in the proper location and distribute it to the proper recipients. They will
+              simply need to sign up for our service, keep organic and inorganic garbage apart, and deliver it when our servicemen knock on their doors. Instead of harming
+              and contaminating the environment, this garbage will be transported to a location where it will be appropriately handled and additionally, the owners will 
+              receive hefty compensation for the trash they carelessly discard.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="img-fluid rounded" src="img/about_image_2.jpg" alt="">
+             
+        </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+            <h2 class="featurette-heading" style="color:#f9004d">The cycle of making fertilizer is so fun !</h2>
+            <p class="lead" style="color:white"> Both organic and inorganic waste will be cleverly converted into fertilizer that can be 
+              used in agriculture. In addition to being able to be utilized in gardens, homes, and nurseries, recycled and reused items can also be resold on the market.
+              The entire system may initially have just a very minor effect from this process. Although this is a very minor step, we think it is the correct move in the
+              right direction for progress.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid rounded" src="img/about_image_3.jpg" alt="">
+             
+        </div>
     </div>
     
+    
+</div>
+
+
+  
+
+   
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2022-2023 Garbageman, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
