@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
+{
+    header("location: login.php");
+}
+
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -48,9 +59,10 @@
             </form>
             <div class="mx-2">
               <a class="btn btn-danger" href="/login.html">Login</a>
-              <a class="btn btn-danger" href="/signup.html">signup</a>
+              <a class="btn btn-danger" href="/signup.php">signup</a>
               
           </div>
+          <h3><?php echo "Welcome ". $_SESSION['username']?>!</h3>
         </div>
     </nav>
 
