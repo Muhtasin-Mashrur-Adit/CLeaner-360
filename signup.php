@@ -44,8 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
 if(empty(trim($_POST['password']))){
     $password_err = "Password cannot be blank";
 }
-elseif(strlen(trim($_POST['password'])) < 5){
-    $password_err = "Password cannot be less than 5 characters";
+elseif(strlen(trim($_POST['password'])) < 8){
+    $password_err = "Password cannot be less than 8 characters";
 }
 else{
     $password = trim($_POST['password']);
@@ -133,8 +133,9 @@ mysqli_close($conn);
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="mx-2">
-                <a class="btn btn-danger" href="/login.html">Login</a>
-                <a class="btn btn-danger" href="/signup.html">signup</a>
+                 <a class="btn btn-danger" href="login.php">Login</a>
+                <a class="btn btn-danger" href="signup.php">signup</a>
+                
             </div>
         </div>
     </nav>

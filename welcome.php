@@ -1,14 +1,4 @@
-<?php
 
-session_start();
-
-if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
-{
-    header("location: 482/login.php");
-}
-
-
-?>
 <!doctype html>
 <html lang="en">
 
@@ -28,7 +18,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Garbageman</a>
+        <a class="navbar-brand" href="/welcome.php">Garbageman</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +27,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/welcome.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about.html">About</a>
@@ -58,12 +48,13 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="mx-2">
-            
-                <a class="btn btn-danger" href="logout.php">Logout</a>
+                <a class="btn btn-danger" href="login.php">Login</a>
+                <a class="btn btn-danger" href="signup.php">signup</a>
+                
                 
               
           </div>
-          <a style="color:white"  href="#"> <?php echo "Welcome ". $_SESSION['username']?></a>
+          
        
              
                 

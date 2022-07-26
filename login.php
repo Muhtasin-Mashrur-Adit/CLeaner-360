@@ -5,7 +5,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: welcome.php");
+    header("location: index.php");
     exit;
 }
 require_once "config.php";
@@ -50,7 +50,7 @@ if(empty($err))
                             $_SESSION["loggedin"] = true;
 
                             //Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: index.php");
                             
                         }
                     }
@@ -111,8 +111,9 @@ if(empty($err))
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="mx-2">
-                <a class="btn btn-danger" href="/login.html">Login</a>
-                <a class="btn btn-danger" href="/signup.html">signup</a>
+            <a class="btn btn-danger" href="login.php">Login</a>
+                <a class="btn btn-danger" href="signup.php">signup</a>
+                
             </div>
         </div>
     </nav>
