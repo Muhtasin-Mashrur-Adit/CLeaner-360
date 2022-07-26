@@ -90,18 +90,18 @@ if(empty($err))
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/welcome.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About</a>
+                    <a class="nav-link" href="/about.php">About</a>
                 </li>
 
                
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                    <a class="nav-link" href="/contact.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/service.html">Service</a>
+                  <a class="nav-link" href="/service.php">Service</a>
               </li>
 
 
