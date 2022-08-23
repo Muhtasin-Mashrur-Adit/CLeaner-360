@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['username'])){
+  echo "You are logged out";
+  header('location:./login.php');
+}
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -12,6 +21,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/subscribe.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Garbageman</title>
 
@@ -80,44 +90,24 @@
 </head>
 <body>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Garbageman</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="/about.html">About</a>
-                  </li>
-  
-                 
-                  <li class="nav-item">
-                      <a class="nav-link" href="/contact.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/service.html">Service</a>
-                </li>
-  
-  
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-              </form>
-              <div class="mx-2">
-                <a class="btn btn-danger" href="/login.html">Login</a>
-                <a class="btn btn-danger" href="/signup.html">signup</a>
-              </div>
-          </div>
-      </nav>
-  
-   
+    <nav>
+        <div class="container nav_container">
+            <a href="index.php"><h4>Garbageman</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="Search.php">Search</a></li>
+                <li><a href="logout.php"> Logout </a></li>
+                
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+           
+            
+
+        </div>
+    </nav>
     
     
    
@@ -125,25 +115,29 @@
    
 
 
-<div class="container py-3">
+<div style="margin-top:50px" class="container py-3">
   
 
   <main>
+  <form action="manage_cart.php" method="POST">
     <div class="row row-cols-1 row-cols-md-3 mb-3 my-4 text-center">
+      
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">3 months</h4>
+            <h4 class="my-0 fw-normal"> 1 months</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">৳350<small class="text-muted fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">৳350<small class="text-muted fw-light">/1mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4" style="color:white">
               <li>Collect From Your Door</li>
               <li>Give Three Different Bag</li>
               <li>Email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Subscribe</button>
+            <button type="submit" name="add_to_cart" class="btn btn-info">Subscribe</button>
+            <input type="hidden" name="Item_Name" value="subscribe_1">
+            <input type="hidden" name="price" value="350">
           </div>
         </div>
       </div>
@@ -153,14 +147,16 @@
             <h4 class="my-0 fw-normal">6 months</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">৳1500<small class="text-muted fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">৳2000<small class="text-muted fw-light">/6mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4" style="color:white">
               <li>Collect From Your Door</li>
               <li>Give Three Different Bag</li>
               <li>Email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Subscribe</button>
+            <button type="submit" name="add_to_cart" class="btn btn-info">Subscribe</button>
+            <input type="hidden" name="Item_Name" value="subscribe_6">
+            <input type="hidden" name="price" value="2000">
           </div>
         </div>
       </div>
@@ -170,19 +166,22 @@
             <h4 class="my-0 fw-normal">12 months</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">৳2500<small class="text-muted fw-light">/mo</small></h1>
+            <h1 class="card-title pricing-card-title">৳3800<small class="text-muted fw-light">/1yr</small></h1>
             <ul class="list-unstyled mt-3 mb-4" style="color:white">
               <li>Collect From Your Door</li>
               <li>Give Three Different Bag</li>
               <li>Email support</li>
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Subscribe</button>
+            <button type="submit" name="add_to_cart" class="btn btn-info">Subscribe</button>
+            <input type="hidden" name="Item_Name" value="subscribe_12">
+            <input type="hidden" name="price" value="3800">
           </div>
         </div>
       </div>
     
     </div>
+    </form>  
 
     
   </main>

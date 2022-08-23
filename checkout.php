@@ -1,5 +1,11 @@
-<!doctype html>
-<html lang="en">
+<?php
+
+session_start();
+if(!isset($_SESSION['username'])){
+  echo "You are logged out";
+  header('location:./login.php');
+}
+?>
 
 <head>
     <!-- Required meta tags -->
@@ -72,7 +78,7 @@
     
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Garbageman</a>
+    <a class="navbar-brand" href="welcome.php">Garbageman</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -81,123 +87,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="checkout.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
+                <a class="nav-link" href="/about.php">About</a>
             </li>
 
            
             <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact Us</a>
+                <a class="nav-link" href="/contact.php">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/service.html">Service</a>
-          </li>
+           
 
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <div class="mx-2">
-            <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
-            <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
-        </div>
+        
+       
     </div>
 </nav>
 
-
-
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="ModalLabel">Login to Garbageman</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-        <form>
-            <div class="form-group">
-              <label for="InputEmail1">Email address</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="InputPassword1">Password</label>
-              <input type="password" class="form-control" id="InputPassword1">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="Check1">
-              <label class="form-check-label" for="Check1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button><br><br>
-            <button type="submit" class="btn btn-primary">Forgot password</button><br><br>
-            
-          </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-    </div>
-  </div>
-</div>
-</div>
-
-
-<!-- Sign Up Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="ModalLabel">Get an Garbageman Account</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="name">
-            
-          </div>
-          <div class="form-group">
-            <label for="name">Mobile number</label>
-            <input type="number" class="form-control" id="mobile number" aria-describedby="mobile number">
-          </div>
-          <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" aria-describedby="address">
-            
-          </div>
-            <div class="form-group">
-              <label for="InputEmail1">Email address</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="InputPassword1">Password</label>
-              <input type="password" class="form-control" id="InputPassword1">
-            </div>
-            <div class="form-group">
-              <label for="cInputPassword1">Confirm Password</label>
-              <input type="password" class="form-control" id="cInputPassword1">
-            </div>
-             
-            <button type="submit" class="btn btn-primary">Creat Account</button>
-          </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-    </div>
-  </div>
-</div>
-</div>
-<body class="bg-light">
     
 <div class="container">
   <main>
@@ -228,7 +136,7 @@
       </div>
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Billing address</h4>
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" novalidate >
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">First name</label>
@@ -273,34 +181,9 @@
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-            </div>
+            
 
-            <div class="col-md-5 my-4">
-              <label for="city" class="form-label">City</label>
-              <select class="form-select" id="city" required>
-                <option value="">Choose...</option>
-                <option>Dhaka</option>
-                <option>Chittagong</option>
-                <option>Sylhet</option>
-              </select>
-              
-            </div>
-
-            <div class="col-md-4 my-4">
-              <label for="Area" class="form-label">Area</label>
-              <select class="form-select" id="Area" required>
-                <option value="">Choose...</option>
-                <option>Bashundhara</option>
-                <option>Banani</option>
-                <option>Dhanmondi</option>
-                <option>Uttara</option>
-                <option>Gulshan</option>
-              </select>
-              
-            </div>
+           
 
             
           </div>
@@ -318,24 +201,7 @@
 
           <h4 class="mb-3">Payment</h4>
 
-          <div class="my-3">
-            <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-              <label class="form-check-label" for="credit">Credit card</label>
-            </div>
-            <div class="form-check">
-              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="debit">Debit card</label>
-            </div>
-            <div class="form-check">
-              <input id="bkash" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="bkash">Bkash</label>
-            </div>
-            <div class="form-check">
-                <input id="bkash" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="bkash">Nagad</label>
-              </div>
-          </div>
+          
 
           
 

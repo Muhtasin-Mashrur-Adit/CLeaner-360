@@ -1,126 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garbageman</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Garbageman</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About</a>
-                </li>
-
-               
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/service.html">Service</a>
-              </li>
-
-
+    <nav>
+        <div class="container nav_container">
+            <a href="index.php"><h4>Garbageman</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="login.php">User Login</a></li>
+                <li ><a href="admin/admin_login.php">admin login</a></li>
+                <li><a href="signup.php">Signup</a></li>
+                <li><a href="search.php">Search</a></li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <div class="mx-2">
-              <a class="btn btn-danger" href="/login.html">Login</a>
-              <a class="btn btn-danger" href="/signup.html">signup</a>
-            </div>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+
         </div>
     </nav>
-
- 
-  
- 
-  <div class="container my-4">
-    <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7">
-            <h2 class="featurette-heading" style="color:#f9004d"> Our main Target is to make our environment free from dust and manage the Garbage in good way.</h2>
-            <p class="lead" style="color:white"> To accommodate the quantity of garbage generated each day, by 2050, we will need the same amount of landfill area as 95 regular-sized football fields.
-              This assumption is based on the daily reports of how trash management is being handled. If this continues, air,
-              soil, and water pollution in nature will dramatically grow. Not only will this negatively impact our everyday lives, but it will also provide a serious
-              challenge for our future generations to bear these obligations.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="img/about_image_1.jpg" alt="">
-             
-        </div>
-    </div>
-    <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading" style="color:#f9004d">Recycle is best process to make environment free from more and more plastic </h2>
-            <p class="lead" style="color:white">However,  we should alter it and we can. We now have a big obligation to protect our environment by taking all the required precautions.
-              We must accept responsibility for addressing the environmental contamination that is escalating daily, both directly and indirectly. Owners toss away their rubbish,
-              from homes to eateries. We can only appropriately handle the garbage if they do it in the proper location and distribute it to the proper recipients. They will
-              simply need to sign up for our service, keep organic and inorganic garbage apart, and deliver it when our servicemen knock on their doors. Instead of harming
-              and contaminating the environment, this garbage will be transported to a location where it will be appropriately handled and additionally, the owners will 
-              receive hefty compensation for the trash they carelessly discard.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <img class="img-fluid rounded" src="img/about_image_2.jpg" alt="">
-             
-        </div>
-    </div>
-    <div class="row featurette d-flex justify-content-center align-items-center">
-        <div class="col-md-7">
-            <h2 class="featurette-heading" style="color:#f9004d">The cycle of making fertilizer is so fun !</h2>
-            <p class="lead" style="color:white"> Both organic and inorganic waste will be cleverly converted into fertilizer that can be 
-              used in agriculture. In addition to being able to be utilized in gardens, homes, and nurseries, recycled and reused items can also be resold on the market.
-              The entire system may initially have just a very minor effect from this process. Although this is a very minor step, we think it is the correct move in the
-              right direction for progress.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="img-fluid rounded" src="img/about_image_3.jpg" alt="">
-             
-        </div>
-    </div>
-    
-    
-</div>
-
-
-  
-
    
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2022-2023 Garbageman, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
+   
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="container service_container">
+            <article class="service">
+                <div class="service_info">
+                    <i class="uil uil-servers"></i>
+                    <h4>Home Pickup</h4>
+                    <p>We pickup your reusable waste from your doorstap</p>
 
+                </div>    
+            </article>
+
+            <article class="service">
+                <div class="service_info">
+                    <i class="uil uil-balance-scale"></i>
+                    <h4>Govt certified scale</h4>
+                    <p>wighting is done by Govt certified Scale</p>
+                </div>    
+            </article>
+            <article class="service">
+                <div class="service_info">
+                        <i class="uil uil-dollar-sign-alt"></i>
+                        <h4>Instant Cash</h4>
+                        <p>Instant Cash with reciept after wighting your recyclable waste</p>
+                </div>        
+            </article>
+            <article class="service">
+                <div class="service_info">
+                    <i class="uil uil-users-alt"></i>
+                    <h4>Customer Friendly</h4>
+                    <p>Customer Friendly service is our  main goal.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="locations">
+        <div class="container locations_container">
+            <div class="location_left">
+                <h1>Our Location</h1>
+                <p> Our company location are In Bashundhara R/A </p>
+                
+
+            </div>
+            <div class="location_right">
+                <article class="location">
+                    <p> Our main goal is to manage your garbage from Your door step.And make our environment Clean and Healthy.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.098091885866!2d90.42336791493432!3d23.815110684557446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64c103a8093%3A0xd660a4f50365294a!2sNorth%20South%20University!5e0!3m2!1sen!2sbd!4v1660142749674!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    
+                </article>
+            </div>
+        </div>
+    </section>            
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.php"class="footer_logo" ><h4>Garbageman</h4></a>
+                <p>Our main target is to make our Environment Clean</p>
+                
+            </div>
+            <div class="footer_2">
+
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="Contact.php">Contact</a></li>
+                    <li><a href="about.php">About</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>01823714404</p>
+                    <p>Garbageman@gmail.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="footer_copyright">
+                <small>copyright &copy; Garbageman</small>
+            </div>
+            <p class="float-right"><a href="#">Back to top</a></p>
+
+
+
+        </div>
+
+
+    </footer>
+
+    
+
+    <script src="./main.js"></script>
+    
+</body>
 </html>

@@ -95,54 +95,42 @@ mysqli_close($conn);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <style>
+      .footer_3 li a{
+        text-decoration:none;
+      }
 
-    <title>PHP login system!</title>
+      </style>
+    <title>Garbageman</title>
   </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Garbageman</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About</a>
-                </li>
-
-               
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/service.html">Service</a>
-              </li>
-
-
+<body>
+ 
+  <nav>
+        <div class="container nav_container">
+            <a href="index.php"><h4>Garbageman</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="about.php">About</a></li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search by your location" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <div class="mx-2">
-                 <a class="btn btn-danger" href="login.php">Login</a>
-                <a class="btn btn-danger" href="signup.php">signup</a>
-                
-            </div>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+
         </div>
-    </nav>
+ </nav>      
 
 
-<div class="container mt-4">
-<h3>Please Register to Garbageman:</h3>
+<div class="container mt-4" style="background: #6c63ff; border-radius:2rem; margin-bottom:4rem">
+<h3 style="margin-top:75px">Please Register to Garbageman:</h3>
 <hr>
 <form action="" method="post">
   <div class="form-row">
@@ -194,10 +182,68 @@ mysqli_close($conn);
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button style=" padding-bottom:1rem;margin-bottom:2rem" type="submit" class="btn btn-danger">Sign in</button>
 </form>
 </div>
+<footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.php"class="footer_logo" ><h4>Garbageman</h4></a>
+                <p>Our main target is to make our Environment Clean</p>
+                
+            </div>
+            <div class="footer_2">
 
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="Contact.php">Contact</a></li>
+                    <li><a href="about.php">About</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>01823714404</p>
+                    <p>Garbageman@gmail.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_copyright">
+                <small>copyright &copy; Garbageman</small>
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
+
+
+ 
+    <script src="./main.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
